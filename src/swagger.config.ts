@@ -8,5 +8,5 @@ export function setupSwagger(app: INestApplication): void {
     .setVersion('1.0.0') // 버전
     .build();
   const document = SwaggerModule.createDocument(app, options);
-  SwaggerModule.setup('api', app, document); // API 문서 주소
+  SwaggerModule.setup('api-docs', app, document); // API 문서 주소
 }
